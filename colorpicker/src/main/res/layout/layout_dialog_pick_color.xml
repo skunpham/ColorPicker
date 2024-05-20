@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3D3B39"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_color"
+        android:textColor="#ffffff"
+        android:paddingHorizontal="16dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <com.skunpham.colorpicker.ColorPickerView
+        android:id="@+id/colorPickerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enableAlpha="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/txt_ok"
+            android:layout_marginStart="8dp"
+            android:textColor="#ffffff"
+            android:paddingHorizontal="16dp"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
